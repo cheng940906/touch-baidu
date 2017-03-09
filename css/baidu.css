@@ -1,0 +1,449 @@
+*{
+    padding:0;margin:0;list-style: none;
+    color:#000;text-decoration: none;
+}
+body,html{
+    width:100%;height:100%;
+    overflow: hidden;
+}
+/*头开始*/
+header{
+    width:100%;
+    background: #168bd8;
+    height:60px;
+    position:fixed;
+    top:0;left:0;right:0;
+    margin:0 auto;
+    z-index: 999;
+}
+.max{
+    display:flex;
+}
+
+header .header{
+    height:100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom:10px;
+    font-family: "微软雅黑";
+    position: relative;
+}
+header .min{
+    display: none;
+}
+header .header .logo{
+    width:120px;height:40px;
+    background:url(../img/logo.png);
+}
+header .header .index{
+    color:#fff;
+}
+header .header a:nth-child(2){
+    color:#67cbff;
+}
+header .header a:last-child{
+    color:#FFDA28;
+}
+header .header .last{
+    font-size: 12px;
+    color:#fff;
+}
+.header a:nth-of-type(5) {
+    margin-left: 190px;
+}
+/*头结束*/
+#fullpage{
+    width:100%;
+    height:400%;
+}
+section{
+    width:100%;
+    height:25%;
+    position: relative;
+}
+section:nth-child(1){
+    position: relative;
+    background:url(../img/g1.jpg) no-repeat center;
+}
+section:nth-child(2){
+    background:url(../img/g2.jpg) no-repeat center;
+}
+section:nth-child(3){
+    background:url(../img/g3.jpg) no-repeat center;
+}
+section:nth-child(4){
+    background:url(../img/g4.jpg) no-repeat center;
+}
+section .cen-back{
+    width:100%;
+    position: relative;
+}
+section .cloud:nth-child(1){
+     width:200%;height:1000px;top:0;
+     background:url(../img/cloud_1.png);
+     position:absolute;
+     animation:cloud 30s linear infinite;
+ }
+section .cloud:nth-child(2){
+    width:200%;height:100px;
+    background:url(../img/cloud_2.png);
+    position:absolute;top:300px;
+    animation:cloud 40s linear infinite;
+}
+section .cloud:nth-child(3){
+    width:200%;height:200px;
+    background:url(../img/cloud_3.png);
+    position:absolute;top:300px;
+    animation:cloud 50s linear infinite;
+}
+section .zhihe{
+    width:119px;height:78px;
+    background: url(../img/he.png) no-repeat;
+    position:absolute;top:100px;left:470px;
+    -webkit-animation:flight 1s linear infinite alternate;
+}
+section .jleft{
+    width:265px;height:175px;
+    background: url(../img/jleft.png) no-repeat;
+    position:absolute;top:487px;left:0px;
+}
+section .jcon{
+    width:63px;height:78px;
+    background: url(../img/jyi.png) no-repeat;
+    position:absolute;top:523px;right:490px;
+}
+section .jright{
+    width:260px;height:175px;
+    background: url(../img/jright.png) no-repeat;
+    position:absolute;top:490px;right:50px;
+}
+section .ship{
+    width:242px;height:228px;
+    background: url(../img/chuan.png) no-repeat;
+    position:absolute;top:346px;left:300px;
+    z-index: 9999;
+    /* transform: translate(-50px,0);*/
+     opacity: 1;
+}
+section .one-bot{
+    width:100%;height:126px;
+    background: url(../img/Z.jpg);
+    position:absolute;
+    left:0;bottom:0;
+    display: block;
+}
+section .center{
+    margin:0 auto;
+    position: relative;
+    height:100%;
+}
+section .center .dl{
+    position:absolute;
+    right:0;top:30%;
+   /* transform: translate(150px,0);*/
+    opacity: 0;
+}
+section:nth-child(1) .center .dll{
+    position:absolute;
+    right:0;top:20%;
+    transform:none;
+    opacity:1;
+}
+section .center .dll form{
+    width:340px;
+    height:300px;
+    border-radius:10px;
+    background: #4ebffc;
+    padding:0 20px;
+    padding-top: 25px;
+}
+section .center .dll form .input{
+   width:299px;
+    background: #fff;
+    height:40px;
+    line-height:40px;
+    margin-bottom: 25px;
+}
+.input span{
+    margin-left: 5px;
+    background:url(../img/tu.png) no-repeat -124px -12px;
+    display: inline-block;
+}
+section .center .dll form .input input{
+    height:36px;margin:2px 5px;
+    border:0;    width: 252px;
+}
+.input:nth-child(2) span{
+    margin-left: 5px;
+    background:url(../img/tu.png) no-repeat -140px -12px;
+    display: inline-block;
+}
+section .center .dll form .yanz{
+   height:38px;
+    margin-top:10px;
+}
+section .center .dll form .yanz input{
+    float: left;padding-right: 10px;
+}
+section .center .dll form .yanz img{
+    width:99px;height:38px;
+    float: left;padding-left: 10px;
+}
+section .center .dll form .yanz a{
+    margin-left:15px;
+   color:#fff;
+    height:100%;
+    line-height: 30px;
+}
+section .center .dll form .submit{
+   margin:35px 0;
+}
+section .center .dll form .submit input{
+    border: 0;
+    background: #ffd850;
+    color: #5c4c12;
+    border-radius: 2px;
+    width: 299px;
+    height:38px;
+}
+section .center .dll form .submit .other{
+    margin:10px 0;display: flex;
+    justify-content: space-between;
+}
+section .center .dll form .submit .other span{
+    margin-left: 5px;
+    background:url(../img/tu.png) no-repeat -203px -75px;
+    display: inline-block;
+}
+section .center .dll form .submit .other a{
+ font-size: 10px;color:#fff;
+}
+.center .cen-zi{
+    width:500px;height:129px;
+  position:absolute;
+  top:30%;left:5%;
+   /* transform: translate(-150px,0);*/
+    opacity: 0;
+}
+
+section:nth-child(1) .center .one-zi{
+    width:500px;height:129px;
+    position:absolute;
+    top:20%;left:0%;
+    /* transform: translate(-150px,0);*/
+    opacity: 1;
+    display:block;
+}
+.center .row .cen-zi .erxzi{
+    width:500px;height:126px;
+    position:absolute;top:0px;left:100px;
+    padding:15px 0;
+}
+.center .row .cen-zi .erxzi p{
+    font-size: 20px;
+    color:#eee;
+}
+.center .row .cen-zi .erxzi h3{
+    font-size: 30px;
+    color:#fff;
+    margin-bottom:15px;
+}
+.er-zi{
+    width:auto;height:auto;
+}
+.er-zi img{
+    animation:imgrotate 3s linear infinite;
+}
+section:nth-child(2) .center .row .two-bot{
+  width:100%;height:120px;
+   position:absolute;bottom:0;left:0;
+}
+section:nth-child(2) .center .row .two-bot .er-kuai:nth-child(1){
+    width:44px;height:44px;background:#35b568;
+    position:absolute;bottom:0px;left:2%;
+}
+.center .row .two-bot .er-kuai:nth-child(2){
+    width:44px;height:44px;background:#35b568;
+    position:absolute;bottom:0px;right:10%;
+}
+.center .row .two-bot .er-kuai:nth-child(3){
+    width:44px;height:44px;background:#8ae75a;
+    position:absolute;bottom:0px;left:18.5%;
+}
+.center .row .two-bot .er-kuai:nth-child(4){
+    width:44px;height:44px;background:#8ae75a;
+    position:absolute;bottom:0px;right:20%;
+}
+.center .row .two-bot .er-kuai:nth-child(5){
+    width:88px;height:88px;background:#4ac179;
+    position:absolute;bottom:0px;left:10%;
+}
+
+section:nth-child(3) .three-bot{
+    width:100%;height:138px;position:absolute;left:0;bottom:0;
+}
+section:nth-child(3) .three-bot .back{
+    width:100%;height:100%;
+    background: url(../img/sanbo.png) no-repeat;
+
+}
+section:nth-child(3) .three-bot .div{
+    width:1000px;position:absolute;bottom:140px;left:0;right:0;
+    margin:0 auto;
+}
+section:nth-child(3) .three-bot .div .kuai-top:nth-child(1){
+    width:88px;height:88px;position:relative;top:60px;left:70px;
+    background: #33bb9a;
+}
+section:nth-child(3) .three-bot .div .kuai-top:nth-child(2){
+    width:88px;height:88px;position:relative;top:60px;left:-20px;
+    background:#29a2b8;
+}
+section:nth-child(3) .three-bot .div .kuai-top:nth-child(3){
+    width:88px;height:88px;position:relative;top:-28px;left:157px;
+    background:#60cf6e;
+}
+section:nth-child(3) .three-bot .div .kuai-top:nth-child(4){
+    width:176px;height:176px;position:relative;top:-28px;left:70px;
+    background:#60cf6e url(../img/sankuai.jpg);
+}
+section:nth-child(3) .three-bot .div .kuai-top:nth-child(5){
+    width:88px;height:88px;position:relative;top:-194px;left:246px;
+    background: #33bb9a;
+}
+@media screen and (max-width:1000px) {
+    header .max {
+        display: none;
+    }
+
+    header .min {
+        display: flex;
+    }
+
+    header .min .logo {
+        margin-left: 10px;
+    }
+
+    header .min .menu-option {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 10px;
+    }
+
+    header .min .menu-option .menu-option-top {
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        display: block;
+        margin-top: 10px;
+        transition: transform 1s ease;
+    }
+
+    header .min .menu-option .menu-option-bot {
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        display: block;
+        margin-top: 10px;
+        transition: transform 1s ease;
+    }
+
+    header .min .sceen {
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        display: none;
+        perspective: 500px;
+    }
+
+    header .min .sceen .menu {
+        transform-style: preserve-3d;
+    }
+
+    header .min .menu a {
+        width: 100%;
+        height: 40px;
+        background: #1574B4;
+        display: flex;
+        margin: 0;
+        font-size: 20px;
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        transform: rotateX(0deg);
+        opacity: 0;
+
+    }
+
+    header .min .menu a:nth-child(1) {
+        animation: nav .2s linear .2s forwards;
+    }
+
+    header .min .menu a:nth-child(2) {
+        animation: nav .4s linear .4s forwards;
+    }
+
+    header .min .menu a:nth-child(3) {
+        animation: nav .6s linear .6s forwards;
+    }
+
+    header .min .menu a:nth-child(4) {
+        animation: nav .8s linear .8s forwards;
+    }
+
+    header .min .menu a:nth-child(5) {
+        animation: nav 1s linear 1s forwards;
+    }
+
+    header .min .menu a:nth-child(6) {
+        animation: nav 1.2s linear 1.2s forwards;
+    }
+
+    header .min .menu a:nth-child(7) {
+        animation: nav 1.4s linear 1.4s forwards;
+    }
+
+    section .center .dll {
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+
+    }
+
+    section .ship, section .center .dl {
+        display: none;
+    }
+
+    section .jcon, section .jleft, section .jright {
+        display: none;
+    }
+    section:nth-child(1) .center .one-zi{
+        display: none;
+    }
+    .center .cen-zi {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+}
+.btn{
+    width:10px;height:140px;
+    position:fixed;
+    top:0;bottom:0;right:15px;
+    margin:auto 0;
+}
+.btn li{
+    width:10px;height:10px;
+    border:1px solid #000;
+    border-radius: 50%;
+    margin:20px 0;
+}
+.btn .btnn{
+    background: #ccc;
+    border:0;
+}
